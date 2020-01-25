@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>BooneWiegand</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div style="float: left; width: 100%;" class="mainHeader">
+        <div style="float: left; " class="subHeader">
+            <h1>Creating a webpage</h1>
+        </div>
+    </div>
+
+    <p><fontcolor="blue"><b>Making this webpage is easy to do 
+        and won't make me want to end it all</b></fontcolor></p>
+
+    <button id="happy" onclick="changeButton(id)" class="unclicked">Happy</button>
+    <button id="sad" onclick="changeButton(id)" class="unclicked">Sad</button>
+    <button id="ectatic" onclick="changeButton(id)" class="unclicked">Ecstatic</button>
+
+    <!--Functions for use in head-->
+    <script>
+        function getWindowWidth() {
+            return screen.width/2;
+        }
+    </script>
+
+    <!--Functions for use in body-->
+    <script>
+        /* Change the CSS code a button runs based on its current class */
+        function changeButton(x) {
+            var unclicked = "unclicked";
+            var clicked = "clicked";
+            if (document.getElementById(x).classList.contains(unclicked)) {
+                document.getElementById(x).classList.add(clicked);
+                document.getElementById(x).classList.remove(unclicked);
+            }
+            else if (document.getElementById(x).classList.contains(clicked)) {
+                document.getElementById(x).classList.add(unclicked);
+                document.getElementById(x).classList.remove(clicked);
+            }
+        }
+    </script>
+</body>
+
+</html>
