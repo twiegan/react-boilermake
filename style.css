@@ -1,13 +1,16 @@
-/* Kichul's Shit */
-#first {
-    color: green
-}
+/* Boone Wiegand */
+/* Text Formatting */
+.format {
+    /* OPTIONAL CODE FOR GRADIENT TEXT
+    background: linear-gradient(to right, #1DB954, rgb(109, 109, 109));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    */
+    color: #00C4CC;
+    text-align: center;
+    padding: 10px;
+}    
 
-.abc {
-    color: red
-}
-
-/* Boone's Shit */
 /* Traits of Unclicked button */
 .unclicked{
     background-color: rgba(220, 220, 220, 0.68);
