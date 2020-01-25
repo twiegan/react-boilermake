@@ -3,37 +3,69 @@
 <html>
 
 <head>
-    <title>BooneWiegand</title>
+    <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<style>
-    h1 {
-        text-align: center;
-    }
-</style>
+    <style>
+        html { font-family: Arial; color: #333;}
+        body { background: #ccc; margin: 0;}
+        #container {width: 1500px; margin: 0 auto; background: #fff;}
+            #header { width: 100%; height:150px; background-image: linear-gradient(to right, #1DB954 , #E43397);}
+                #img { max-width: 100%; max-height: 100%;}
+            #banner { background: #191414; height: 40px; clear: both;}
+            #left_col { float: left; width: 47%; height: 750px; border:1px solid #333; color: white; background: rgb(255, 255, 255); margin-top: 5px; padding:20px; text-align: center;}
+                #left_sub_one { display: inline-block; width: 90%; height: 320px; border:1px solid blue; color: white; padding: 20px; margin-bottom: 10px; text-align: center;}
+                        #row_one { display: inline-block; width: 90%; height: 50px; border:none; padding: 27px; text-align: center;}
+                        #row_two { display: inline-block; width: 90%; height: 50px; border:none; padding: 27px; text-align: center;}
+                        #row_three { display: inline-block; width: 90%; height: 50px; border:none; padding: 27px; text-align: center;}
+            #right_col { float: right; width: 47%; height: 750px; border:1px solid #333; color: #fff; background: rgb(24, 86, 255); margin-top: 5px; padding:20px}
+                #left_sub_two { display: inline-block; width: 90%; height: 320px; border:1px solid blue; color: white; padding: 20px; margin-top: 10px; text-align: center;}
+    </style>
+</head> <!--END HEAD-->
 
 <body>
 
-    <div style="float: left; width: 100%;" class="mainHeader">
-        <div style="float: left; " class="subHeader">
-            <h1>Creating a webpage</h1>
+    <!--CONTAINER-->
+    <div id="container">
+        <!--HEADER-->
+        <div id="header">
+            <img id="img" src="logoTransparent.png" alt="">
         </div>
-    </div>
 
-    <p><fontcolor="blue"><b>Making this webpage is easy to do 
-        and won't make me want to end it all</b></fontcolor></p>
+        <!--CONTENT AREA-->
+        <div id="content_area">
 
-    <button id="happy" onclick="changeButton(id)" class="unclicked">Happy</button>
-    <button id="sad" onclick="changeButton(id)" class="unclicked">Sad</button>
-    <button id="ectatic" onclick="changeButton(id)" class="unclicked">Ecstatic</button>
+            <div id="banner"></div>
 
-    <!--Functions for use in head-->
-    <script>
-        function getWindowWidth() {
-            return screen.width/2;
-        }
-    </script>
+            <div id="left_col">
+                <div id="left_sub_one">
+                    <div id="row_one">
+                        <button id="energetic" onclick="changeButton(id)" class="unclicked">Energetic</button>
+                        <button id="excited" onclick="changeButton(id)" class="unclicked"> Excited </button>
+                        <button id="angry" onclick="changeButton(id)" class="unclicked">Angry</button>
+                    </div>
+                    <div id="row_two">
+                        <button id="joyful" onclick="changeButton(id)" class="unclicked">Joyful</button>
+                        <button id="surprised" onclick="changeButton(id)" class="unclicked">Surprised</button>                        
+                        <button id="calm" onclick="changeButton(id)" class="unclicked">Calm</button>
+                    </div>
+                    <div id="row_three">
+                        <button id="sad" onclick="changeButton(id)" class="unclicked">Sad</button>
+                        <button id="melancholy" onclick="changeButton(id)" class="unclicked">Melancholy</button>
+                        <button id="fearful" onclick="changeButton(id)" class="unclicked">Fearful</button>
+                    </div>
+                </div>
+                <div id="left_sub_two"></div>
+            </div>
+
+            <div id="right_col">
+                <!--Playlist Button-->
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXcQNVmqx0HklH" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div id="footer"></div>
+    </div> <!--END CONTAINER-->
 
     <!--Functions for use in body-->
     <script>
@@ -51,6 +83,7 @@
             }
         }
     </script>
-</body>
+
+</body> <!--END BODY-->
 
 </html>
