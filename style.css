@@ -7,10 +7,11 @@
     color: red
 }
 
+
 /* Boone's Shit */
 /* Traits of Unclicked button */
 .unclicked{
-    background-color: rgba(220, 220, 220, 0.68);
+    background-color: rgb(49, 181, 47);
     border: 1px solid black;
     color: white;
     width: 6em; /* Button Size */
@@ -32,7 +33,7 @@
 
 /* Traits of Clicked button */
 .clicked{
-    background-color: green;
+    background-color: rgb(33, 217, 183);
     border: 1px solid black;
     border-radius: 8px;  /* Rounds Edges */
     color: white;
