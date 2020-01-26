@@ -11,28 +11,28 @@ var energyAVG = 0;
 var onButtons = 0;
 
 /*Emotional attribute Constants*/
-const ENERGETIC_VALENCE = 0.85;
-const ENERGETIC_DANCABILITY = 0.9;
-const ENERGETIC_ENERGY = 1.0;
+const ENERGETIC_VALENCE = 0.5;
+const ENERGETIC_DANCABILITY = 0.8;
+const ENERGETIC_ENERGY = 0.8;
 
-const EXCITED_VALENCE = 0.85;
+const EXCITED_VALENCE = 0.8;
 const EXCITED_DANCEABILITY = 0.6;
 const EXCITED_ENERGY = 0.7;
 
-const ANGRY_VALENCE = 0.1;
+const ANGRY_VALENCE = 0.2;
 const ANGRY_DANCEABILITY = 0.3;
-const ANGRY_ENERGY = 0.8;
+const ANGRY_ENERGY = 0.7;
 
-const JOYFUL_VALENCE = 0.9;
-const JOYFUL_DANCEABILITY = 0.5;
-const JOYFUL_ENERGY = 0.5;
+const JOYFUL_VALENCE = 0.8;
+const JOYFUL_DANCEABILITY = 0.4;
+const JOYFUL_ENERGY = 0.4;
 
-const CALM_VALENCE = 0.6;
-const CALM_DANCEABILITY = 0.1;
-const CALM_ENERGY = 0.1;
+const CALM_VALENCE = 0.7;
+const CALM_DANCEABILITY = 0.2;
+const CALM_ENERGY = 0.2;
 
-const SAD_VALENCE = 0.1;
-const SAD_DANCEABILITY = 0.1;
+const SAD_VALENCE = 0.2;
+const SAD_DANCEABILITY = 0.2;
 const SAD_ENERGY = 0.3;
 
 /* Change the CSS code a button runs based on its current class */
