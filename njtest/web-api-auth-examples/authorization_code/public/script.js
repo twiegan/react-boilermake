@@ -104,12 +104,8 @@ function getBoolean(id) {
     }
 }
 
-function readFile() {
-  const fs = require('fs')
-
-  fs.readFile('Input.txt', (err, data) => {
-      if (err) throw err;
-
-      console.log(data.toString());
-  })
+function getAccessCode() {
+  var fs = require('fs');
+  var html = fs.readFileSync(__dirname + '/console_output.txt', 'utf8');
+  console.log(html);
 };
