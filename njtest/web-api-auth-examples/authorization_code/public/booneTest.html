@@ -23,9 +23,12 @@
 </head> <!--END HEAD-->
 
 <body>
-
      <!--Connect JS Body Functions-->
      <script src="script.js"></script>
+     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+
+
 
     <!--CONTAINER-->
     <div id="container">
@@ -44,7 +47,7 @@
                     <h1 class="format"><strong>TELL US HOW YOU FEEL... </strong></h1>
                     <p class="format">1. SELECT ANY EMOTIONS THAT YOU WANT</p>
                     <p class="format">2. CLICK "GENERATE PLAYLIST"</p class="format">
-                    <p class="format">3. BASED ON YOUR CHOICES WE'LL CREATE A PLAYLIST AND ADD IT TO YOUR SPOTIFY ACCOUNT</p>
+                    <p class="format">3. BASED ON YOUR CHOICES WE'LL CREATE A PLAYLIST AND ADD IT TO YOUR SPOTIFY ACCOUNT</p  >
                     <p class="format">ENJOY!</p>
                 </div>
                 <div id="left_sub_two">
@@ -55,7 +58,7 @@
                     </div>
                     <div id="row_two">
                         <button id="joyful" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">JOYFUL</button>
-                        <button id="surprised" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">SURPRISED</button>                        
+                        <button id="surprised" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">SURPRISED</button>
                         <button id="calm" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">CALM</button>
                     </div>
                     <div id="row_three">

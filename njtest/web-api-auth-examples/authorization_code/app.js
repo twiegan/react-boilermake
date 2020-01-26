@@ -101,6 +101,7 @@ app.get('/callback', function(req, res) {
         // use the access token to access the Spotify Web API
         request.get(options, function(error, response, body) {
           console.log(body);
+          console.log(access_token);
         });
 
         // we can also pass the token to the browser to make requests from there
@@ -119,6 +120,8 @@ app.get('/callback', function(req, res) {
   }
 });
 
+var global_token;
+
 app.get('/refresh_token', function(req, res) {
 
   // requesting access token from refresh token
@@ -136,11 +139,13 @@ app.get('/refresh_token', function(req, res) {
   request.post(authOptions, function(error, response, body) {
     if (!error && response.statusCode === 200) {
       var access_token = body.access_token;
+      global_token = body.access_token;
       res.send({
         'access_token': access_token
       });
     }
   });
+
 });
 
 console.log('Listening on 3000');
