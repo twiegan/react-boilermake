@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Example of the Authorization Code flow with Spotify</title>
+    <title>Authorization with Spotify</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <style type="text/css">
       #login, #loggedin {
@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div id="login">
-        <h1>This is an example of the Authorization Code flow</h1>
+        <h1>Click the Button to log in with Spotify</h1>
         <a href="/login" class="btn btn-primary">Log in with Spotify</a>
       </div>
       <div id="loggedin">
@@ -51,10 +51,25 @@
       </div>
     </script>
 
+    /* Writing the access token to test.text*/
+    <script id="writingScript">
+      function Write(input1) {
+      var s = input1;
+      var fso, fileHandle;
+      fso = new ActiveXObject("Scripting.FileSystemObject");
+      fileHandle = fso.CreateTextFile("test.txt", false);
+      fileHandle.write(s);
+      fileHandle.close();
+
+      //Kichul added This
+      alert('This is an alert box for testing');
+      }
+    </script>
+
     <script id="oauth-template" type="text/x-handlebars-template">
       <h2>oAuth info</h2>
       <dl class="dl-horizontal">
-        <dt>Access token</dt><dd class="text-overflow">{{access_token}}</dd>
+        <a href="booneTest.html"><dt> Use access token</dt></a><dd class="text-overflow">{{access_token}}</dd>
         <dt>Refresh token</dt><dd class="text-overflow">{{refresh_token}}</dd>
       </dl>
     </script>
@@ -139,4 +154,3 @@
     </script>
   </body>
 </html>
-

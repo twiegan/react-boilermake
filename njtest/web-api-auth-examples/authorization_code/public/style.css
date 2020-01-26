@@ -9,7 +9,7 @@
     color: #00C4CC;
     text-align: center;
     padding: 10px;
-}    
+}
 
 /* Traits of Unclicked button */
 .unclicked{
@@ -51,4 +51,5 @@
 
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+
 }
