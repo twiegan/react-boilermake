@@ -1,1 +1,16 @@
 Listening on 3000
+{
+  country: 'US',
+  display_name: 'jx2werner',
+  email: 'jx2werner@gmail.com',
+  explicit_content: { filter_enabled: false, filter_locked: false },
+  external_urls: { spotify: 'https://open.spotify.com/user/jx2werner' },
+  followers: { href: null, total: 1 },
+  href: 'https://api.spotify.com/v1/users/jx2werner',
+  id: 'jx2werner',
+  images: [],
+  product: 'premium',
+  type: 'user',
+  uri: 'spotify:user:jx2werner'
+}
+BQBcnOH5Fzy3cQFWnHKblDBe7vGuhH6Q6YZxFiOTdcjrKoqjA7oHccr2IS8UzijZufOK5XNPH87P41Mn-e9edY-Nh3EAJm22rcqBN49fTCppG5gTRSm8e5EZzePrxZlPUntLHFJCd3oNhQF9nLrVF0Ifk-mnNqkYsSy24Qkzrh28MHYfbRca54pLwbDR0eZ4wsQ
