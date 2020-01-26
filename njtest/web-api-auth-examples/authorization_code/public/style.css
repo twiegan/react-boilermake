@@ -53,3 +53,18 @@
     transition-duration: 0.4s;
 
 }
+
+/* Code specific to long_button */
+.long_button {
+    background-color: rgb(23, 138, 117);
+    border: 1px solid black;
+    width: 20em; /* Button Size */
+    height: 4em;
+    display: inline-block;
+    margin-right: 25px;
+
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Monsterrat';
+}

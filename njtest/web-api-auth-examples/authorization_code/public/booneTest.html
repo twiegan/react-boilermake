@@ -24,6 +24,9 @@
 
 <body>
 
+     <!--Connect JS Body Functions-->
+     <script src="script.js"></script>
+
     <!--CONTAINER-->
     <div id="container">
         <!--HEADER-->
@@ -46,20 +49,19 @@
                 </div>
                 <div id="left_sub_two">
                     <div id="row_one">
-                        <button id="energetic" onclick="changeButton(id)" class="unclicked">ENERGETIC</button>
-                        <button id="excited" onclick="changeButton(id)" class="unclicked"> EXCITED </button>
-                        <button id="angry" onclick="changeButton(id)" class="unclicked">ANGRY</button>
+                        <button id="energetic" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">ENERGETIC</button>
+                        <button id="excited" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked"> EXCITED </button>
+                        <button id="angry" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">ANGRY</button>
                     </div>
                     <div id="row_two">
-                        <button id="joyful" onclick="changeButton(id)" class="unclicked">JOYFUL</button>
-                        <button id="surprised" onclick="changeButton(id)" class="unclicked">SURPRISED</button>                        
-                        <button id="calm" onclick="changeButton(id)" class="unclicked">CALM</button>
+                        <button id="joyful" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">JOYFUL</button>
+                        <button id="surprised" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">SURPRISED</button>                        
+                        <button id="calm" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">CALM</button>
                     </div>
                     <div id="row_three">
-                        <button id="sad" onclick="changeButton(id)" class="unclicked">SAD</button>
-                        <button id="melancholy" onclick="changeButton(id)" class="unclicked">MELANCHOLY</button>
-                        <button id="fearful" onclick="changeButton(id)" class="unclicked">FEARFUL</button>
+                        <button id="long_boy" class="long_button">CREATE A PLAYLIST</button>
                     </div>
+
                 </div>
             </div>
 
@@ -72,23 +74,6 @@
         <!--FOOTER-->
         <div id="footer"></div>
     </div> <!--END CONTAINER-->
-
-    <!--Functions for use in body-->
-    <script>
-        /* Change the CSS code a button runs based on its current class */
-        function changeButton(x) {
-            var unclicked = "unclicked";
-            var clicked = "clicked";
-            if (document.getElementById(x).classList.contains(unclicked)) {
-                document.getElementById(x).classList.add(clicked);
-                document.getElementById(x).classList.remove(unclicked);
-            }
-            else if (document.getElementById(x).classList.contains(clicked)) {
-                document.getElementById(x).classList.add(unclicked);
-                document.getElementById(x).classList.remove(clicked);
-            }
-        }
-    </script>
 
 </body> <!--END BODY-->
 
