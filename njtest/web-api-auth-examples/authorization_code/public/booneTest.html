@@ -33,6 +33,21 @@
             <img id="img" src="logoTransparent.png" alt="">
         </div>
 
+        <script>
+          function resetButtonClasses() {
+            var unclicked = "unclicked";
+            var clicked = "clicked";
+
+            var ids = ["energetic", "excited", "angry", "sad", "joyful", "calm"];
+            for (var i = 0; i < ids.length; i++) {
+              if (document.getElementById(ids[i]).classList.contains(clicked)) {
+                    document.getElementById(ids[i]).classList.add(unclicked);
+                    document.getElementById(ids[i]).classList.remove(clicked);
+              }
+            }
+          }
+        </script>
+
         <!--CONTENT AREA-->
         <div id="content_area">
 
@@ -54,11 +69,11 @@
                     </div>
                     <div id="row_two">
                         <button id="joyful" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">JOYFUL</button>
-                        <button id="surprised" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">SURPRISED</button>
+                        <button id="sad" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">SAD</button>
                         <button id="calm" onclick="changeButton(id);setBoolean(id);getBoolean(id);" class="unclicked">CALM</button>
                     </div>
                     <div id="row_three">
-                        <button id="long_boy" class="long_button">CREATE A PLAYLIST</button>
+                        <button id="long_boy" class="long_button" onclick="averageEmoteValues();resetValues();resetButtonClasses();">CREATE A PLAYLIST</button>
                     </div>
 
                 </div>
